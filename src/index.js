@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ErrorBoundary } from "react-error-boundary";
+
+function ErrorFallback({ error, componentStack, resetErrorBoundary }) {
+  return(
+    <div className='ERROR'>
+      <h1>REFRESHEA LA PAGINA</h1>
+      <h2>Se cometio un error de logica en la <u>Escritura</u></h2>
+    </div>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>
 );
 

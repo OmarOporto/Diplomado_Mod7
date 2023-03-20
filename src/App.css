@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Casio {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 10px ridge #878786;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.button-wrapper {
+  user-select: none;
+  cursor: pointer;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+  background-color: #e0e1e6;
+  color: #888;
+  flex: 1;
+  outline: 1px solid #888;
+}
+
+.operator {
+  background-color: #389e45;
+  color: white;
+}
+
+.equal-btn {
+  user-select: none;
+  cursor: pointer;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 1.4em;
+  background-color: #c5c3cd;
+  color: #000000;
+  flex: 1;
+  outline: 1px solid #888888;
+}
+
+.input {
+  height: 2em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  background-color: #000000;
+  color: #fafafa;
+  padding: 0.5em;
+  outline: 1px solid #888888;
 }
